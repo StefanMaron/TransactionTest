@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "al",
+      "request": "launch",
+      "name": "launch: TransactionTest",
+      "server": "https://cosmo-alpaca-enterprise.westeurope.cloudapp.azure.com",
+      "serverInstance": "f0ba804a4a03dev",
+      "port": 443,
+      "authentication": "UserPassword",
+      "environmentType": "OnPrem",
+      "tenant": "default",
+      "startupObjectType": "Page",
+      "startupObjectId": 50100,
+      "breakOnError": true,
+      "launchBrowser": true,
+      "enableLongRunningSqlStatements": true,
+      "enableSqlInformationDebugger": true
+    },
+    {
+      "type": "al",
+      "request": "snapshotInitialize",
+      "name": "snapshotInitialize: TransactionTest",
+      "server": "https://cosmo-alpaca-enterprise.westeurope.cloudapp.azure.com",
+      "serverInstance": "f0ba804a4a03snap",
+      "port": 443,
+      "authentication": "UserPassword",
+      "environmentType": "OnPrem",
+      "tenant": "default",
+      "breakOnNext": "WebClient"
+    }
+  ]
+}
